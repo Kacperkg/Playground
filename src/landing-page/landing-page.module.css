@@ -1,0 +1,54 @@
+.overlay1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1,
+.box2,
+.box3 {
+  position: relative;
+  background-color: #000000;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 10svw;
+  height: 10svw;
+  z-index: 2;
+  display: flex;
+  gap: 0;
+  top: calc(50% - 5svw);
+  left: calc(50% - 5svw);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Adjust spacing between lines */
+  z-index: 10;
+  font-size: 4em;
+}
+
+.textLine {
+  display: flex;
+}
+
+.letter {
+  display: inline-block;
+}
